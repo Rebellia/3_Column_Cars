@@ -1,0 +1,56 @@
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #f2f2f2;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+a {
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 25%;
+  padding: 10px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.carContainer {
+  padding: 20px;
+}
+
+.oval {
+  width: 200px;
+  height: 80px;
+  background: #f2f2f2;
+  border-radius: 40px;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+
+#sedans a {
+  color: #e38826;
+}
+
+#suvs {
+  background-color: #006970;
+}
+
+#suvs a {
+  color: #006970;
+}
+
+#luxury {
+  background-color: #004241;
+}
+
+#luxury a {
+  color: #004241;
+}
+/*# sourceMappingURL=style.css.map */
