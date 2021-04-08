@@ -1,0 +1,45 @@
+/*If there are contents within the div that has the curved corners,
+you have to set overflow: hidden because otherwise the child div's overflow
+can give the impression that the border-radius isn't working.*/
+.main_container {
+    border-radius: 5px;
+    //overflow: hidden;
+    display: flex;
+    padding-bottom: 70px;
+    flex-shrink: 1;
+    align-items: left;
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+
+    }
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+.car_container {
+    flex-shrink: 1;
+    border: 5px solid red;
+    padding: 50px 55px 40px 50px;
+    //height: 350px;
+}
+
+
+.carLink {
+    @include oval;
+    flex-shrink: 1;
+    text-align: left;
+
+    &:hover {
+        color: $veryLightGray;
+        background-color: $brightOrange;
+        border: 1px solid $veryLightGray;
+
+        a {
+            color: $veryLightGray;
+        }
+    }
+}

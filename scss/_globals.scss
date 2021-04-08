@@ -2,26 +2,9 @@
     margin: 0px;
 }
 
-/*If there are contents within the div that has the curved corners,
-you have to set overflow: hidden because otherwise the child div's overflow
-can give the impression that the border-radius isn't working.*/
-.main_container {
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    padding-bottom: 70px;
-
-    @media (max-width: 375px) {
-        flex-direction: column;
-    }
-
-    div {
-        //border: 5px solid red;
-        padding: 50px 55px 40px 50px;
-        //height: 350px;
-    }
+body {
+    background-color: blue;
 }
-
 
 h1 {
     color: $veryLightGray;
@@ -38,8 +21,11 @@ p {
 
 a {
     text-decoration: none;
-    background-color: $veryLightGray;
-    @include oval;
+    //background-color: $veryLightGray;
+    //@include oval;
     padding: 15px 30px 15px 30px;
     @include paragraphFont;
+    
 }
+
+
