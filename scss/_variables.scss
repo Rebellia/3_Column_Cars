@@ -1,0 +1,27 @@
+//Colors
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+
+//Fonts
+@mixin headerFont {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700px;
+}
+
+@mixin paragraphFont {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@mixin oval {
+    width: 200px;
+    height: 80px;
+    background: $veryLightGray;
+    border-radius: 40px;
+  }

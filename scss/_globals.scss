@@ -1,40 +1,46 @@
-//Colors
-$brightOrange: hsl(31, 77%, 52%);
-$darkCyan: hsl(184, 100%, 22%);
-$veryDarkCyan: hsl(179, 100%, 13%);
-$transparentWhite: hsla(0, 0%, 100%, 0.75);
-$veryLightGray: hsl(0, 0%, 95%);
-
-//Typography
-body {
-    font-size: 15px;
-    //font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
-    color: $veryLightGray;
+* {
+    margin: 0px;
 }
 
+/*If there are contents within the div that has the curved corners,
+you have to set overflow: hidden because otherwise the child div's overflow
+can give the impression that the border-radius isn't working.*/
+.main_container {
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 70px;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
+
+    div {
+        //border: 5px solid red;
+        padding: 50px 55px 40px 50px;
+        //height: 350px;
+    }
+}
+
+
 h1 {
-    font-family: 'Big Shoulders Display', cursive;
+    color: $veryLightGray;
+    @include headerFont;
+    margin-bottom: 40px;
+}
+
+p {
+    color: $transparentWhite;
+    @include paragraphFont;
+    //border: 1px solid red;
+    margin-bottom: 30px;
 }
 
 a {
     text-decoration: none;
     background-color: $veryLightGray;
-    border-radius: 25%;
-    padding: 10px;
-}
-
-p {
-    color: $transparentWhite;
-}
-
-.carContainer {
-    padding: 20px;
-}
-
-.oval {
-    width: 200px;
-    height: 80px;
-    background: $veryLightGray;
-    border-radius: 40px;
+    @include oval;
+    padding: 15px 30px 15px 30px;
+    @include paragraphFont;
+    //argin-bottom: 60px;
 }

@@ -1,33 +1,60 @@
-body {
-  font-size: 15px;
-  font-family: 'Lexend Deca', sans-serif;
-  color: #f2f2f2;
+* {
+  margin: 0px;
+}
+
+/*If there are contents within the div that has the curved corners,
+you have to set overflow: hidden because otherwise the child div's overflow
+can give the impression that the border-radius isn't working.*/
+.main_container {
+  border-radius: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 375px) {
+  .main_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main_container div {
+  padding: 50px 55px 40px 50px;
 }
 
 h1 {
+  color: #f2f2f2;
   font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700px;
+  margin-bottom: 40px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 a {
   text-decoration: none;
   background-color: #f2f2f2;
-  border-radius: 25%;
-  padding: 10px;
-}
-
-p {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.carContainer {
-  padding: 20px;
-}
-
-.oval {
   width: 200px;
   height: 80px;
   background: #f2f2f2;
   border-radius: 40px;
+  padding: 15px 30px 15px 30px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 #sedans {
