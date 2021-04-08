@@ -2,10 +2,6 @@
     margin: 0px;
 }
 
-body {
-    background-color: blue;
-}
-
 h1 {
     color: $veryLightGray;
     @include headerFont;
@@ -21,11 +17,8 @@ p {
 
 a {
     text-decoration: none;
-    //background-color: $veryLightGray;
-    //@include oval;
-    padding: 15px 30px 15px 30px;
-    @include paragraphFont;
-    
+    //padding: 15px 30px 15px 30px;
+    //@include paragraphFont;
 }
 
 

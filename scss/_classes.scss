@@ -3,10 +3,8 @@ you have to set overflow: hidden because otherwise the child div's overflow
 can give the impression that the border-radius isn't working.*/
 .main_container {
     border-radius: 5px;
-    //overflow: hidden;
     display: flex;
     padding-bottom: 70px;
-    flex-shrink: 1;
     align-items: left;
 
     @media (min-width: 1440px) {
@@ -21,29 +19,40 @@ can give the impression that the border-radius isn't working.*/
 }
 
 .car_container {
-    flex-shrink: 1;
     padding: 50px 55px 40px 50px;
-    //height: 350px;
 }
 
 
-.carLink {
-    @include oval;
-    flex-shrink: 1;
+/* .carLink {
+    //@include oval;
     text-align: left;
+    //background-color: $veryLightGray;
 
-    &:hover
-    {
-        border: 1px solid $veryLightGray;
-        //background-color: $brightOrange;
-        color: $veryLightGray;
-        background-color: rgba(0,0,0,0.0);
-        //color: $veryLightGray;
-
+    &:hover {
         a {
-            color: $veryLightGray;
+            background-color: transparent;
+            border: 1px solid $veryLightGray;
         }
     }
+    
+} */
 
-
-}
+.block {
+    @include oval;
+    @include paragraphFont;
+    display: block;
+    width: 50%;
+    border: none;
+    border: 1px solid $veryLightGray;
+    background-color: $veryLightGray;
+    color: $veryLightGray;
+    //padding: 20px 30px;
+    //font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .block:hover {
+    background-color: inherit;
+    border: 1px solid $veryLightGray;
+  }
