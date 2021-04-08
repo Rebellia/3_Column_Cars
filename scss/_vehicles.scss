@@ -3,6 +3,12 @@
 
     a {
         color: $brightOrange;
+
+        &:hover {
+            color: $veryLightGray;
+            background-color: $brightOrange;
+            border: 1px solid $veryLightGray;
+        }
     }
 }
 
@@ -11,6 +17,12 @@
 
     a {
         color: $darkCyan;
+
+        &:hover {
+            color: $veryLightGray;
+            background-color: $darkCyan;
+            border: 1px solid $veryLightGray;
+        }
     }
 }
 
@@ -19,5 +31,11 @@
 
     a {
         color: $veryDarkCyan;
+
+        &:hover {
+            color: $veryLightGray;
+            background-color: $veryDarkCyan;
+            border: 1px solid $veryLightGray;
+        }
     }
 }
