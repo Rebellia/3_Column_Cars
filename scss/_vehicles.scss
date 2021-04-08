@@ -1,40 +1,11 @@
 #sedans {
     background-color: $brightOrange;
-
-    a {
-        color: $brightOrange;
-
-        &:hover {
-            color: $veryLightGray;
-            background-color: $brightOrange;
-        }
-    }
 }
 
 #suvs {
     background-color: $darkCyan;
-
-    a {
-        color: $darkCyan;
-
-        &:hover {
-            color: $veryLightGray;
-            background-color: $darkCyan;
-            border: 1px solid $veryLightGray;
-        }
-    }
 }
 
 #luxury {
     background-color: $veryDarkCyan;
-
-    a {
-        color: $veryDarkCyan;
-
-        &:hover {
-            color: $veryLightGray;
-            background-color: $veryDarkCyan;
-            border: 1px solid $veryLightGray;
-        }
-    }
 }

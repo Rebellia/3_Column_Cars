@@ -22,7 +22,6 @@ can give the impression that the border-radius isn't working.*/
 
 .car_container {
     flex-shrink: 1;
-    border: 5px solid red;
     padding: 50px 55px 40px 50px;
     //height: 350px;
 }
@@ -33,13 +32,18 @@ can give the impression that the border-radius isn't working.*/
     flex-shrink: 1;
     text-align: left;
 
-    &:hover {
-        color: $veryLightGray;
-        background-color: $brightOrange;
+    &:hover
+    {
         border: 1px solid $veryLightGray;
+        //background-color: $brightOrange;
+        color: $veryLightGray;
+        background-color: rgba(0,0,0,0.0);
+        //color: $veryLightGray;
 
         a {
             color: $veryLightGray;
         }
     }
+
+
 }

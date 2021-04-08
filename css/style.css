@@ -35,41 +35,12 @@ a {
   background-color: #e38826;
 }
 
-#sedans a {
-  color: #e38826;
-}
-
-#sedans a:hover {
-  color: #f2f2f2;
-  background-color: #e38826;
-}
-
 #suvs {
   background-color: #006970;
 }
 
-#suvs a {
-  color: #006970;
-}
-
-#suvs a:hover {
-  color: #f2f2f2;
-  background-color: #006970;
-  border: 1px solid #f2f2f2;
-}
-
 #luxury {
   background-color: #004241;
-}
-
-#luxury a {
-  color: #004241;
-}
-
-#luxury a:hover {
-  color: #f2f2f2;
-  background-color: #004241;
-  border: 1px solid #f2f2f2;
 }
 
 /*If there are contents within the div that has the curved corners,
@@ -110,7 +81,6 @@ can give the impression that the border-radius isn't working.*/
 .car_container {
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  border: 5px solid red;
   padding: 50px 55px 40px 50px;
 }
 
@@ -123,9 +93,9 @@ can give the impression that the border-radius isn't working.*/
 }
 
 .carLink:hover {
-  color: #f2f2f2;
-  background-color: #e38826;
   border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .carLink:hover a {
