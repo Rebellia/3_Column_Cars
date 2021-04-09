@@ -1,25 +1,30 @@
-* {
-  margin: 0px;
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f2f2f2;
 }
 
-h1 {
-  color: #f2f2f2;
-  font-family: 'Big Shoulders Display', cursive;
-  font-weight: 700px;
-  margin-bottom: 40px;
+@media (min-width: 376px) {
+  .mainContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
-p {
-  color: rgba(255, 255, 255, 0.75);
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400px;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-a {
-  text-decoration: none;
+.car-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 40px 55px 50px 48px;
 }
 
 #sedans {
@@ -31,6 +36,7 @@ a {
 }
 
 #sedans button:hover {
+  background-color: inherit;
   color: #f2f2f2;
 }
 
@@ -43,6 +49,7 @@ a {
 }
 
 #suvs button:hover {
+  background-color: inherit;
   color: #f2f2f2;
 }
 
@@ -55,77 +62,32 @@ a {
 }
 
 #luxury button:hover {
+  background-color: inherit;
   color: #f2f2f2;
 }
 
-/*If there are contents within the div that has the curved corners,
-you have to set overflow: hidden because otherwise the child div's overflow
-can give the impression that the border-radius isn't working.*/
-.main_container {
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 70px;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+h1 {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700px;
 }
 
-@media (min-width: 1440px) {
-  .main_container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media (max-width: 375px) {
-  .main_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100vh;
-  }
-}
-
-.car_container {
-  padding: 50px 55px 40px 50px;
-}
-
-/* .carLink {
-    //@include oval;
-    text-align: left;
-    //background-color: $veryLightGray;
-
-    &:hover {
-        a {
-            background-color: transparent;
-            border: 1px solid $veryLightGray;
-        }
-    }
-    
-} */
-.block {
-  border-radius: 40px;
+p {
+  color: rgba(255, 255, 255, 0.75);
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400px;
   font-size: 15px;
   line-height: 1.6;
-  display: block;
-  width: 50%;
-  border: none;
-  border: 1px solid #f2f2f2;
-  background-color: #f2f2f2;
-  color: #f2f2f2;
-  cursor: pointer;
-  text-align: center;
 }
 
-.block:hover {
-  background-color: inherit;
+button {
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 1.6;
+  border-radius: 40px;
+  padding: 15px 30px;
   border: 1px solid #f2f2f2;
 }
 /*# sourceMappingURL=style.css.map */

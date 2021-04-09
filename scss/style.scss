@@ -1,4 +1,59 @@
 @import "variables";
-@import "globals";
-@import "vehicles";
 @import "classes";
+
+#sedans {
+    background-color: $brightOrange;
+    
+    button {
+        color: $brightOrange;
+
+        &:hover {
+            background-color: inherit;
+            color: $veryLightGray;
+        }
+    }
+}
+
+#suvs {
+    background-color: $darkCyan;
+
+    button {
+        color: $darkCyan;
+
+        &:hover {
+            background-color: inherit;
+            color: $veryLightGray;
+        }
+    }
+}
+
+#luxury {
+    background-color: $veryDarkCyan;
+
+    button {
+        color: $veryDarkCyan;
+
+        &:hover {
+            background-color: inherit;
+            color: $veryLightGray;
+        }
+    }
+}
+
+h1 {
+    color: $veryLightGray;
+    @include headerFont;
+}
+
+p {
+    color: $transparentWhite;
+    @include paragraphFont;
+}
+
+button {
+    background-color: $veryLightGray;
+    @include paragraphFont;
+    border-radius: 40px;
+    padding: 15px 30px;
+    border: 1px solid $veryLightGray;
+}
