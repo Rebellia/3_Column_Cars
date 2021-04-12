@@ -1,16 +1,63 @@
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
+    display: grid;
+    width: 329px;
+    border-radius: 10px;
     overflow: hidden;
-    background-color:$veryLightGray;
 
-    @media (min-width: 376px) {
-        flex-direction: row;
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: 306px 306px 306px;
+        border: none;
+        height: 500px;
+        width: 918px;
+        overflow: hidden;
+
     }
-}
 
-.car-container {
-    flex-grow: 1;
-    padding: 40px 55px 50px 48px;
+    .car-container {
+        padding: 44px 49px;
+
+        @media screen and (min-width: 1024px) {
+            padding: 48px 48px;
+    
+        }
+    }
+
+    #sedans {
+        background-color: $brightOrange;
+
+        button {
+            color: $brightOrange;
+
+            &:hover {
+                color: $veryLightGray;
+                background-color: inherit;
+            }
+        }
+    }
+
+    #suvs {
+        background-color: $darkCyan;
+
+        button {
+            color: $darkCyan;
+
+            &:hover {
+                color: $veryLightGray;
+                background-color: inherit;
+            }
+        }
+    }
+
+    #luxury {
+        background-color: $veryDarkCyan;
+
+        button {
+            color: $veryDarkCyan;
+
+            &:hover {
+                color: $veryLightGray;
+                background-color: inherit;
+            }
+        }
+    }
 }

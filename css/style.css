@@ -1,75 +1,8 @@
-.mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: #f2f2f2;
-}
-
-@media (min-width: 376px) {
-  .mainContainer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.car-container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 40px 55px 50px 48px;
-}
-
-#sedans {
-  background-color: #e38826;
-}
-
-#sedans button {
-  color: #e38826;
-}
-
-#sedans button:hover {
-  background-color: inherit;
-  color: #f2f2f2;
-}
-
-#suvs {
-  background-color: #006970;
-}
-
-#suvs button {
-  color: #006970;
-}
-
-#suvs button:hover {
-  background-color: inherit;
-  color: #f2f2f2;
-}
-
-#luxury {
-  background-color: #004241;
-}
-
-#luxury button {
-  color: #004241;
-}
-
-#luxury button:hover {
-  background-color: inherit;
-  color: #f2f2f2;
-}
-
 h1 {
   color: #f2f2f2;
   font-family: 'Big Shoulders Display', cursive;
   font-weight: 700px;
+  font-size: 42px;
 }
 
 p {
@@ -78,6 +11,13 @@ p {
   font-weight: 400px;
   font-size: 15px;
   line-height: 1.6;
+  padding-bottom: 23px;
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    padding-bottom: 80px;
+  }
 }
 
 button {
@@ -86,8 +26,81 @@ button {
   font-weight: 400px;
   font-size: 15px;
   line-height: 1.6;
-  border-radius: 40px;
-  padding: 15px 30px;
+  border-radius: 100px;
   border: 1px solid #f2f2f2;
+  width: 150px;
+  height: 55px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.mainContainer {
+  display: -ms-grid;
+  display: grid;
+  width: 329px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainContainer {
+    -ms-grid-columns: 306px 306px 306px;
+        grid-template-columns: 306px 306px 306px;
+    border: none;
+    height: 500px;
+    width: 918px;
+    overflow: hidden;
+  }
+}
+
+.mainContainer .car-container {
+  padding: 44px 49px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainContainer .car-container {
+    padding: 48px 48px;
+  }
+}
+
+.mainContainer #sedans {
+  background-color: #e38826;
+}
+
+.mainContainer #sedans button {
+  color: #e38826;
+}
+
+.mainContainer #sedans button:hover {
+  color: #f2f2f2;
+  background-color: inherit;
+}
+
+.mainContainer #suvs {
+  background-color: #006970;
+}
+
+.mainContainer #suvs button {
+  color: #006970;
+}
+
+.mainContainer #suvs button:hover {
+  color: #f2f2f2;
+  background-color: inherit;
+}
+
+.mainContainer #luxury {
+  background-color: #004241;
+}
+
+.mainContainer #luxury button {
+  color: #004241;
+}
+
+.mainContainer #luxury button:hover {
+  color: #f2f2f2;
+  background-color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
